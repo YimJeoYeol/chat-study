@@ -1,0 +1,19 @@
+server:
+  port: 7002
+springdoc:
+  swagger-ui:
+      enabled: true
+      operations-sorter: method
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/chat_study
+    username: root
+    password: 1234
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    show-sql: true
+token:
+  secret-key: "SECRET"
+  refresh-secret-key: "REFRESH_SECRET"
+  token-time: 300
+  refresh-token-time: 300
