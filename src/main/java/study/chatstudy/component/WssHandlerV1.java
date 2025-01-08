@@ -11,6 +11,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import study.chatstudy.domain.chat.model.Message;
 
 @Component
 @RequiredArgsConstructor

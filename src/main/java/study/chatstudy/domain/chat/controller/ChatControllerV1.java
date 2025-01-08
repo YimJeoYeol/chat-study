@@ -12,7 +12,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
+import study.chatstudy.domain.chat.model.response.ChatListResponse;
+import study.chatstudy.domain.chat.service.ChatServiceV1;
 
 
 @Tag(name = "Chata API", description = "V1 Chat API")
