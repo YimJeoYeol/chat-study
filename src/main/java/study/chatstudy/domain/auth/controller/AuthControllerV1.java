@@ -16,6 +16,8 @@ import lombok.RequiredArgsConstructor;
 import study.chatstudy.domain.auth.model.request.CreateUserRequest;
 import study.chatstudy.domain.auth.model.request.LoginRequest;
 import study.chatstudy.domain.auth.model.response.CreateUserResponse;
+import study.chatstudy.domain.auth.model.response.LoginResponse;
+import study.chatstudy.domain.auth.service.AuthService;
 
 @Tag(name = "Auth API", description = "V1 Auth API")
 @RestController
@@ -31,7 +33,8 @@ public class AuthControllerV1 {
     )
     @PostMapping("/create-user")
     public CreateUserResponse createUser(
-            @RequestBody @Valid CreateUserRequest request
+            @RequestBody @Valid
+            CreateUserRequest request
     ) {
         return authService.createUser(request);
     }
